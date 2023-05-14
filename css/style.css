@@ -302,7 +302,7 @@ transform: translateX(0%);
  .burger{
   display: block;
   float: right;
-  margin-top: 22px;
+  margin-top: 20px;
   margin-right: 10px;
   cursor: pointer;
 }

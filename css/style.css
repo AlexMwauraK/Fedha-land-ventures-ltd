@@ -181,7 +181,9 @@ nav ul ul ul li{
 @media all and (max-width: 775px) {
   .imglogo img{
     width: 50px;
-    margin: 10px 0 0 45px;
+    margin: 6px 0 0 47px;
+    padding-bottom: 10px;
+    /* background-color: green; */
   }
   .quickinfo{
     display: none;
@@ -253,7 +255,7 @@ nav ul ul ul li{
     content: '\f00d';
   }
   .fixed{
-    margin-top: 42.0px;
+    margin-top: 41px;
   }
  /* MOBILE MENU BUGER */
  .navlinks{
@@ -320,6 +322,7 @@ transform: translateX(0%);
   .toggles .line1{
     transform: rotate(-45deg) translate(-5px,5px);
     transition: .3s ease-in-out;
+    background-color: #000;
   }
   .toggles .line2{
     opacity: 0;
@@ -327,6 +330,7 @@ transform: translateX(0%);
   .toggles .line3{
     transform: rotate(45deg) translate(-5px,-5px);
     transition: .5s ease-in-out;
+    background-color: #000;
   }
 
 }
@@ -356,6 +360,6 @@ p{
 
 @media all and (max-width: 775px){
   .content{
-    margin-top: 105px;
+    margin-top: 103px;
   }
   }

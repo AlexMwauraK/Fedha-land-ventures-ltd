@@ -72,6 +72,7 @@ nav{
 }
 .fixed{
   margin-top: 45px;
+
 }
 nav:after{
   content: '';
@@ -252,7 +253,7 @@ nav ul ul ul li{
     content: '\f00d';
   }
   .fixed{
-    margin-top: 43.0px;
+    margin-top: 42.0px;
   }
  /* MOBILE MENU BUGER */
  .navlinks{

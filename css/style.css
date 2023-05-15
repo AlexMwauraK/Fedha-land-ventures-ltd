@@ -186,7 +186,7 @@ nav ul ul ul li{
 @media all and (max-width: 775px) {
   .imglogo img{
     width: 50px;
-    margin: 6px 0 0 47px;
+    margin: 6px 0 0 32px;
     padding-bottom: 10px;
     /* background-color: green; */
   }
@@ -198,7 +198,7 @@ nav ul ul ul li{
     float: left;
   }
   nav .logo{
-    padding-left: 30px;
+    padding-left: 15px;
     width: 50%;
   }
   .show + a, ul{
@@ -265,7 +265,6 @@ nav ul ul ul li{
  /* MOBILE MENU BUGER */
  .navlinks{
   position: absolute;
-  top: 6.5vh;
   background-color: rgb(0, 0, 0,0.9);
   border: solid 0.5px #ffffff63;
   border-bottom-left-radius: 20px;

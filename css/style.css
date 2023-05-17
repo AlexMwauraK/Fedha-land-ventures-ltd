@@ -617,4 +617,8 @@ footer .bottom-details .bottom_text{
   footer .foot .link-boxes .input-box{
     width: 100%;
   }
+  footer .bottom-details .bottom_text{
+   all: unset;
+   margin: 0px;
+  }
 }

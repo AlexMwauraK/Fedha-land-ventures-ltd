@@ -13,6 +13,7 @@
 
 body{
   background: #f2f2f2;
+  height: 200vh;
 }
 /* scroll and highlights */
 ::selection {
@@ -47,11 +48,9 @@ body{
   margin: 10px 0 4px 20px;
 }
 .quickinfo{
-  width: 88%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-  gap: 40px;
-  margin-right: 56px;
 }
 .quickinfo a{
   text-decoration: none;
@@ -65,7 +64,9 @@ body{
   font-size: 16px;
   color: #666;
   display: flex;
-  justify-content: center;
+    /* gap: 40px; */
+  margin-right: 27px;
+  justify-content: flex-end;
   align-items: center;
 }
 nav{
@@ -279,10 +280,6 @@ nav ul ul ul li{
   margin-left: 5px;
   border-left: 4px solid red;
 }
-
-.navlinks a:hover {
-  
-}
 nav ul li a{
   line-height: 20px;
   font-size: 16px;
@@ -300,34 +297,83 @@ nav ul li a:hover{
 .dropdown{
   display: none;
 }
-
 }
 
 
 /* CONTENTS */
-.content{
-  z-index: -1;
+.container {
+  height: 80vh;
+  width: 100vw;
+  position: relative;
+  box-shadow: 3px 3px 16px rgba(0, 0, 0, .7);
+  overflow: hidden; 
+}
+
+.images {
+  height: 100%;
   width: 100%;
-  margin-top: 115px;
+  display: flex;
+  position: relative;
+  overflow: hidden; 
+}
+
+.images img {
+  height: 100%;
+  width: 100%;
   position: absolute;
-  height: 100vh;
-  background-color: rgb(230, 229, 229) ;
-  /* background-color: green; */
-
-}
-header{
-  font-size: 35px;
-  font-weight: 600;
-  padding: 10px 0;
-}
-p{
-  font-size: 30px;
-  font-weight: 500;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  transform-origin: center center; 
 }
 
+.images img.active {
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    transition: 1s ease-in-out;
+  }
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.192);
+  color: #c0c0c067;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#prevButton {
+  left: 10px;
+}
+
+#nextButton {
+  right: 10px;
+}
 @media all and (max-width: 775px){
-  .content{
-    margin-top: 103px;
+  .page {
+    flex-direction: column;
+    padding: 20px;
   }
   }

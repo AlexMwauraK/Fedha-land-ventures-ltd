@@ -17,3 +17,42 @@ const navSlide = () => {
     });
   }
   navSlide();
+  
+  //Automatic slide
+  var firstIndex = 0;
+var img = document.querySelectorAll('.images img');
+var prevButton = document.getElementById('prevButton');
+var nextButton = document.getElementById('nextButton');
+
+function showImage(index) {
+  for (var i = 0; i < img.length; i++) {
+    img[i].classList.remove('active');
+  }
+  img[index].classList.add('active');
+}
+
+function navigatePrevious() {
+  firstIndex--;
+  if (firstIndex < 0) {
+    firstIndex = img.length - 1;
+  }
+  showImage(firstIndex);
+}
+
+function navigateNext() {
+  firstIndex++;
+  if (firstIndex >= img.length) {
+    firstIndex = 0;
+  }
+  showImage(firstIndex);
+}
+
+prevButton.addEventListener('click', navigatePrevious);
+nextButton.addEventListener('click', navigateNext);
+
+function automaticSlide() {
+  navigateNext(); // Show the next image immediately
+  setTimeout(automaticSlide, 15000); // Continue with the automatic slide after the delay
+}
+
+automaticSlide();

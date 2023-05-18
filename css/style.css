@@ -448,7 +448,7 @@ nav ul li a:hover{
 /* /3 */
 
 /* 4 */
-img{
+.myslide.fade > img{
 	transform: scale(1.5, 1.5);
 	-webkit-animation-name: zoomin;
   	-webkit-animation-duration: 40s;
@@ -522,7 +522,16 @@ img{
 }
 /* /6 */
 
-
+/* Description  */
+.description{
+  width: 100%;
+  height: 500px;
+  background: #fff;
+  margin-top: 80px;
+  padding: 80px;
+  text-align: center;
+  
+}
 
 
 
@@ -759,9 +768,9 @@ footer .bottom-details .bottom_text{
   .top .media-icons a:nth-child(3){
     display: none;
   }
-  .top .media-icons a:nth-child(4){
+  /* .top .media-icons a:nth-child(4){
     display: none;
-  }
+  } */
   footer{
     position: relative;
   }

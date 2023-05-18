@@ -345,7 +345,7 @@ nav ul li a:hover{
 	background: #2c3e50; /* darckblue */
 }
 .myslide{
-	height: 655px;
+	height: 700px;
 	display: none;
 	overflow: hidden;
 }
@@ -472,7 +472,7 @@ nav ul li a:hover{
 /* 5 */
 @media screen and (max-width: 800px){
 	.myslide{
-		height: 500px;
+		height: 350px;
 	}
 	.txt{
 		letter-spacing: 2px;

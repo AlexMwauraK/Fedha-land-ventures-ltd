@@ -19,40 +19,46 @@ const navSlide = () => {
   navSlide();
   
   //Automatic slide
-  var firstIndex = 0;
-var img = document.querySelectorAll('.images img');
-var prevButton = document.getElementById('prevButton');
-var nextButton = document.getElementById('nextButton');
+  const myslide = document.querySelectorAll('.myslide'),
+  dot = document.querySelectorAll('.dot');
+let counter = 1;
+slidefun(counter);
 
-function showImage(index) {
-  for (var i = 0; i < img.length; i++) {
-    img[i].classList.remove('active');
-  }
-  img[index].classList.add('active');
+let timer = setInterval(autoSlide, 8000);
+function autoSlide() {
+counter += 1;
+slidefun(counter);
+}
+function plusSlides(n) {
+counter += n;
+slidefun(counter);
+resetTimer();
+}
+function currentSlide(n) {
+counter = n;
+slidefun(counter);
+resetTimer();
+}
+function resetTimer() {
+clearInterval(timer);
+timer = setInterval(autoSlide, 8000);
 }
 
-function navigatePrevious() {
-  firstIndex--;
-  if (firstIndex < 0) {
-    firstIndex = img.length - 1;
-  }
-  showImage(firstIndex);
+function slidefun(n) {
+
+let i;
+for(i = 0;i<myslide.length;i++){
+  myslide[i].style.display = "none";
 }
-
-function navigateNext() {
-  firstIndex++;
-  if (firstIndex >= img.length) {
-    firstIndex = 0;
-  }
-  showImage(firstIndex);
+for(i = 0;i<dot.length;i++) {
+  dot[i].className = dot[i].className.replace(' active', '');
 }
-
-prevButton.addEventListener('click', navigatePrevious);
-nextButton.addEventListener('click', navigateNext);
-
-function automaticSlide() {
-  navigateNext(); // Show the next image immediately
-  setTimeout(automaticSlide, 15000); // Continue with the automatic slide after the delay
+if(n > myslide.length){
+   counter = 1;
+   }
+if(n < 1){
+   counter = myslide.length;
+   }
+myslide[counter - 1].style.display = "block";
+dot[counter - 1].className += " active";
 }
-
-automaticSlide();

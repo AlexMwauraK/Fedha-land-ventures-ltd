@@ -192,7 +192,7 @@ nav ul ul ul li{
 @media all and (max-width: 775px) {
   .imglogo img{
     width: 50px;
-    margin: 6px 0 0 32px;
+    margin: 6px 0 0 30px;
     padding-bottom: 10px;
     /* background-color: green; */
   }
@@ -526,10 +526,10 @@ nav ul li a:hover{
 .description{
   width: 100%;
   height: 500px;
-  background: #fff;
-  margin-top: 80px;
-  padding: 80px;
-  text-align: center;
+  background: #f2f2f2;
+  margin-top: 0px;
+  padding: 0 80px;
+  /* text-align: center; */
   
 }
 

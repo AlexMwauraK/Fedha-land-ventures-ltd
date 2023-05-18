@@ -416,7 +416,7 @@ nav ul li a:hover{
 	color: #fff;
 	letter-spacing: 2px;
 	line-height: 35px;
-	top: 40%;
+	top: 47%;
 	left: 15%;
 	-webkit-animation-name: posi;
   	-webkit-animation-duration: 2s;
@@ -477,7 +477,7 @@ nav ul li a:hover{
 	.txt{
 		letter-spacing: 2px;
 		line-height: 25px;
-		top: 50%;
+		top: 53%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		-webkit-animation-name: posi2;
@@ -488,13 +488,13 @@ nav ul li a:hover{
 
 	@-webkit-keyframes posi2 {
 	  from {top: 35%;}
-	  to {top: 50%;}
+	  to {top: 53%;}
 	}
 
 
 	@keyframes posi2 {
 	  from {top: 35%;}
-	  to {top: 50%;}
+	  to {top: 53%;}
 	}
 
 	.txt h1{

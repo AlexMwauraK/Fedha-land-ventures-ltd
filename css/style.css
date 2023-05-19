@@ -9,6 +9,7 @@
   -webkit-focus-ring-color: rgba(255,255,255, 0) !important;
   outline: none !important;
   -webkit-touch-callout: none;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -534,6 +535,125 @@ nav ul li a:hover{
 }
 
 
+
+
+
+
+/* cards  */
+.description{
+all: unset;
+}
+.cards-title{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-image: linear-gradient(180deg, #9b686875, rgba(255, 255, 0, 0.219));
+}
+.cards-title > p{
+  padding: 10px;
+  font-family: serif;
+  display: flex;
+  margin-top: 5px;
+  text-align: center;
+  align-items: center;
+  border-left: 5px solid red;
+}
+.cards-title > p:nth-child(2){
+  font-size: 16px;
+}
+.main {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin: 2%; */
+}
+
+.card {
+  width: 25%; /* Adjust as needed */
+  display: inline-block;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 5px;
+  margin: 35px;
+  background-color: #f2f2f2;
+  transition: .3s ease-in-out;
+}
+.card:hover{
+  box-shadow: 2px 1px 15px #e20808;
+}
+.image img {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.title {
+  text-align: center;
+  padding: 0 10px;
+  margin-top: 0px;
+  /* background-color: greenyellow; */
+}
+
+h1 {
+  font-size: 20px;
+}
+h1 > a{
+  text-decoration: none;
+  color: rgb(139, 40, 40);
+  text-transform: uppercase;
+}
+h1 > a:hover{
+ color: rgb(63, 75, 248);
+}
+
+.des {
+  padding: 3px;
+  text-align: center;
+  justify-content: flex-end;
+  padding-top: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-top: 0;
+}
+.des p{
+  /* background-color: greenyellow; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 10px 10px;
+}
+.des >p .fas{
+  padding: 2px;
+  margin-right: 10px;
+}
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 26px;
+  font-weight: 600;
+  padding: 3px 30px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
 
 
 

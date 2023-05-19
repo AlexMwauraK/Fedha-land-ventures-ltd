@@ -579,7 +579,7 @@ all: unset;
   transition: .3s ease-in-out;
 }
 .card:hover{
-  box-shadow: 2px 1px 15px #e20808;
+  box-shadow: 2px 1px 15px #e208086e;
 }
 .image img {
   width: 100%;
@@ -651,7 +651,14 @@ button:hover {
 }
 @media only screen and (max-width: 768px) {
   .card {
-    width: 90%;
+    width: 95%;
+    margin: 20px 10px;
+  }
+  .cards-title > p{
+    font-size: 20px;
+  }
+  .cards-title > p:nth-child(2){
+    font-size: 12px;
   }
 }
 

@@ -104,8 +104,10 @@ nav .logo{
 nav .logotxt{
   color: #040a0ac2;
   /* background-color: green; */
-  font-size: 10PX;
+  margin-top: 1px;
+  font-size: 9.7PX;
   margin-top: -10px;
+  margin-left: 1.2px;
 }
 nav ul{
   float: right;
@@ -568,14 +570,14 @@ all: unset;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow: hidden;
   /* margin: 2%; */
 }
 
 .card {
-  width: 25%; /* Adjust as needed */
+  width: 25%; 
   display: inline-block;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.11);
-  /* border-radius: 2px; */
   margin: 35px;
   background-color: #f2f2f2;
   transition: .3s ease-in-out;
@@ -663,22 +665,125 @@ button:hover {
     font-size: 12px;
   }
 }
+/* Our Team section  */
+.team{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  /* Responsive behaviour */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+}
+.profilecard {
+  position: relative;
+  width: 300px;
+  height: 320px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 0 rgba(27, 6, 83, 0.397);
+  padding: 20px;
+  margin:  56px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profilecard:hover{
+  box-shadow: 2px 1px 15px #e208084d;
+}
+.card-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
+  0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
 
-
-
-
-
-/* Booksite visit  */
-.bookvisit{
-  /* background-color: green; */
-  height: 100vh;
+.card-image > img {
+  width: 100%;
+  transform: scale(1.2);
+}
+.name {
+  margin-top: 100px;
+  font-size: 1.4em;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+}
+namet p:nth-child(4){
+ display: unset;
+}
+.namet {
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  text-align: center;
 }
 
 
 
-/* our team  */
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
+
+.facebook:hover {
+  opacity: 0.5;
+}
+
+.facebook i {
+  color: #fff;
+  font-size: 1.4em;
+}
+.instagram:hover {
+  opacity: 0.5;
+}
+
+.instagram > i {
+  color: #fff;
+  font-size: 1.4em;
+}
+
+/* Social media colors */
+.facebook {
+  background: #4267B2;
+  font-size: 20px;
+} 
+
+.instagram {
+background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+} 
+.facebook, .instagram{
+  margin: 12px 8px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.4s;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  mix-blend-mode: darken;
+}
+
+/* BOOK SITE Visit  */
 
 
 

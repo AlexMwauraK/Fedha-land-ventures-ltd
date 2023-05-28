@@ -579,11 +579,11 @@ all: unset;
   display: inline-block;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.11);
   margin: 35px;
-  background-color: #f2f2f2;
+  background-color: #ece9f5;
   transition: .3s ease-in-out;
 }
 .card:hover{
-  box-shadow: 2px 1px 15px #e208086e;
+  box-shadow: 2px 1px 15px #e2080838;
 }
 .image img {
   width: 100%;
@@ -665,33 +665,45 @@ button:hover {
     font-size: 12px;
   }
 }
+
+/* BOOK SITE Visit  */
+.site-visit{
+  background-color: #000000be;
+  height: 100vh;
+}
+
+
+
+
+
 /* Our Team section  */
 .team{
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   display: flex;
-  /* Responsive behaviour */
   flex-wrap: wrap;
+  
   justify-content: center;
   align-items: center;
   padding: 40px 16px;
 }
 .profilecard {
   position: relative;
-  width: 300px;
+  width: 330px;
   height: 320px;
-  background-color: #f2f2f2;
-  border-radius: 8px;
+  background-color: #ece9f5;
+  border-radius: 5px;
   box-shadow: 0 8px 8px 0 rgba(27, 6, 83, 0.397);
   padding: 20px;
-  margin:  56px 20px;
+  margin:  56px 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .profilecard:hover{
-  box-shadow: 2px 1px 15px #e208084d;
+  box-shadow: 2px 1px 15px #e208082c;
+  transition: .3s ease-in-out;
 }
 .card-image {
   width: 120px;
@@ -782,9 +794,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
   text-decoration: none;
   mix-blend-mode: darken;
 }
-
-/* BOOK SITE Visit  */
-
+@media only screen and (max-width: 768px) {
+  .team{
+    padding: 40px 0;
+  }
+  .profilecard{
+    height: unset;
+    margin: 56px 0;
+    width: 95%;
+  }
+}
 
 
 

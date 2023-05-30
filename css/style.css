@@ -563,7 +563,7 @@ all: unset;
   position: relative;
 }
 
-.card::before {
+.card.available::before {
   content: "Available";
   position: absolute;
   top: 10px;
@@ -572,7 +572,17 @@ all: unset;
   color: white;
   padding: 4px 8px;
   font-size: 12px;
-  text-transform: uppercase;
+}
+
+.card.coming-soon::before {
+  content: "Coming Soon";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
 }
 .cards-title{
   display: flex;

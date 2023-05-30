@@ -572,6 +572,7 @@ all: unset;
   color: white;
   padding: 4px 8px;
   font-size: 12px;
+  text-transform: uppercase;
 }
 
 .card.coming-soon::before {
@@ -583,6 +584,7 @@ all: unset;
   color: white;
   padding: 4px 8px;
   font-size: 12px;
+  text-transform: uppercase;
 }
 .cards-title{
   display: flex;

@@ -15,7 +15,7 @@
   	/* Variables for storing colors */
 	--card-clr: #2c303d;
 	--body-clr: #141416;
-	--primary-clr: #b9d4d2;
+	--primary-clr: #40bdbd;
 	--heading-clr: #dadada;
 	--text-clr: #767a86;
   --star-rating: rgb(205, 207, 56);
@@ -559,6 +559,21 @@ nav ul li a:hover{
 .description{
 all: unset;
 }
+.card {
+  position: relative;
+}
+
+.card::before {
+  content: "Available";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
 .cards-title{
   display: flex;
   width: 100%;
@@ -1086,6 +1101,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 .test-card-body .quote i{
 	font-size: 45px;
 	color: var(--heading-clr);
+  
 	margin-right: 20px;
 }
 .test-card-body .quote h2{

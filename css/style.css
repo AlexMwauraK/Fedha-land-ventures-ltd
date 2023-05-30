@@ -72,7 +72,10 @@ body{
   justify-content: flex-end;
   align-items: center;
 }
-.quickinfo p:nth-child(3), p:nth-child(4), p:nth-child(5), p:nth-child(6){
+.quickinfo p:nth-child(3),
+.quickinfo p:nth-child(4),
+.quickinfo p:nth-child(5),
+.quickinfo p:nth-child(6) {
   display: none;
 }
 nav{
@@ -207,7 +210,10 @@ nav ul ul ul li{
   .quickinfo p:nth-child(1), p:nth-child(2){
     display: none;
   }
-  .quickinfo p:nth-child(3), p:nth-child(4), p:nth-child(5), p:nth-child(6){
+  .quickinfo p:nth-child(3),
+  .quickinfo p:nth-child(4),
+  .quickinfo p:nth-child(5),
+  .quickinfo p:nth-child(6) {
     all: unset;
     position: relative;
     margin-right: 10px;
@@ -666,10 +672,236 @@ button:hover {
   }
 }
 
+
+
+
+
 /* BOOK SITE Visit  */
-.site-visit{
-  background-color: #000000be;
-  height: 100vh;
+.wrapper {
+	background: linear-gradient(135deg, #c8e0c4, #61030360, #03093d80, #556152);
+	height: 100%;
+	display: flex;
+	align-items: center;
+  padding: 20px 0;
+	justify-content: center;
+  font-family: 'Raleway';
+}
+
+.container {
+	width: 70%;
+	margin: 0px auto;
+	box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+	display: flex;
+	border-radius: 0 20px 20px 0;
+}
+
+.container-time {
+	background-color: rgba(0, 0, 0, .95);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+	padding: 50px;
+  padding-top: 75px;
+	border-radius: 20px 0 0 20px;
+	text-align: center;
+}
+
+.heading{
+	font-size: 25px;
+	text-transform: uppercase;
+	justify-content: center;
+  font-weight: 600;
+  color: #fff;
+	display: flex;
+}
+.booksitevisit{
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+.time{
+  color: #fff;
+}
+.heading-days {
+	color: #40bdbd;
+	font-size: 30px;
+  width: 100%;
+  margin: 0;
+}
+
+.heading-phone {
+	font-size: 18px;
+  font-weight: unset;
+  color: #fff;
+	width: 100%;
+}
+
+.container-form {
+	padding: 20px 0;
+	margin: 0 auto;
+	color: #000;
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.301), rgba(255, 255, 255, 0));
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: #38313181 .5px solid;
+	border-radius: 0 20px 20px 0;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+form {
+	display: grid;
+	width: 70%;
+	grid-row-gap: 15px;
+}
+
+form p {
+	font-weight: 600;
+	margin-left: 40px;
+}
+
+.form-field {
+	display: flex;
+	/* width: 50%; */
+	justify-content: space-between;
+	height: 40px;
+}
+
+.inputs input, select {
+	padding: 10px 15px;
+	display: flex;
+	align-items: flex-end;
+	font-size: 14px;
+	text-align: center;
+	background: transparent;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #000;
+}
+.inputs input:focus {
+  outline: none;
+}
+.inputs input:valid {
+	background-color: transparent;
+  }
+.inputs{
+	display: flex;
+	justify-content: flex-end;
+	
+	width: 60%;
+}
+input::placeholder,
+textarea::placeholder,
+select{
+  color: #000000; /* Set the text color */
+  font-family: 'Lora';
+  font-size: 14px;
+}
+.btn {
+	background-color: rgba(0, 0, 0, .95);
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	font-size: 18px;
+	border-radius: 100px;
+	box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.btn:hover {
+	transform: scale(1.03);
+	box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+@media screen and (max-width: 768px) {
+	.container-form{
+		width: unset;
+		margin: unset;
+	}
+	form{
+		width: 95%;
+	}
+	.form-field p{
+		font-size: 12px;
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+	input::placeholder,
+textarea::placeholder,
+select{
+  color: #000000; /* Set the text color */
+  font-family: 'Lora';
+  font-size: 12px;
+}
+	.container {
+		flex-direction: column;
+		width: 95%;
+	}
+
+	.container-time {
+		padding: 30px;
+		border-radius: 12px;
+		margin-bottom: 10px;
+		padding: 0;
+		font-size: 12px;
+	}
+
+	.container-form {
+		padding: 10px;
+		border-radius: 12px;
+	}
+	.form-field{
+		height: unset;
+	}
+	.heading {
+		font-size: 30px;
+	}
+
+	.heading-days {
+		font-size: 20px;
+	}
+
+	.heading-phone {
+		font-size: 16px;
+    padding: 10px;
+	}
+	.container-form h2{
+		all: unset;
+		font-size: 30px;
+		font-weight: 600;
+		background-color: #476965;
+		color: #fff;
+		border-radius: 20px;
+		padding: 2%;
+		display: flex;
+		justify-content: center;
+	}
+	input,
+	select {
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.btn {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 880px) {
+	.container-time {
+		padding: 30px;
+	}
+
+	.container-form {
+		padding: 10px;
+	}
 }
 
 

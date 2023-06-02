@@ -1,0 +1,99 @@
+.container{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.profilecard {
+    position: relative;
+    width: 330px;
+    height: 320px;
+    background-color: #ece9f5;
+    border-radius: 5px;
+    box-shadow: 0 8px 8px 0 rgba(27, 6, 83, 0.397);
+    padding: 20px;
+    margin:  56px 35px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profilecard:hover{
+    box-shadow: 2px 1px 15px #e208082c;
+    transition: .3s ease-in-out;
+  }
+  .card-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card-image > img {
+    width: 100%;
+    transform: scale(1.0);
+  }
+  .name {
+    font-size: 1.7em;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+  }
+
+  .namet {
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .OK{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    height: 5vh;
+  }
+  .OK a{
+    background-color: #6FD749;
+    color: #fff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 5px 5px 0 rgba(27, 6, 83, 0.397);
+    transition: .3s ease-in-out;
+  }
+  .OK a:hover{
+    box-shadow: 0 -3px 5px 0 rgba(27, 6, 83, 0.397);
+    background-color: #ECE9F5;
+    color: #6FD749;
+  }
+  @media only screen and (max-width: 768px) {
+    .profilecard{
+      height: unset;
+      margin: 56px 0;
+      width: 95%;
+    }
+    .name{
+        margin-top: 50px;
+    }
+  }

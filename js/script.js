@@ -101,8 +101,8 @@ document.getElementById("submitBtn").addEventListener("click", function(event) {
   if (nameInput && phoneInput && emailInput && dateInput && timeInput) {
     Swal.fire({
       icon: "success",
-      title: "Success",
-      text: "Booking successful!",
+      title: "Success!",
+      text: "Booking successful.",
     }).then(function() {
       // Submit the form after the user dismisses the pop-up
       document.querySelector("form").submit();
@@ -110,7 +110,7 @@ document.getElementById("submitBtn").addEventListener("click", function(event) {
   } else {
     Swal.fire({
       icon: "error",
-      title: "Error",
+      title: "Opps!",
       text: "Please fill in all required fields.",
     });
   }

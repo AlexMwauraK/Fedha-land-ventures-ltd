@@ -102,7 +102,7 @@ document.getElementById("submitBtn").addEventListener("click", function(event) {
     Swal.fire({
       icon: "success",
       title: "Success",
-      text: "Form submitted successfully!",
+      text: "Booking successful!",
     }).then(function() {
       // Submit the form after the user dismisses the pop-up
       document.querySelector("form").submit();

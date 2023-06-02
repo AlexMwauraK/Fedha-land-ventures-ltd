@@ -722,11 +722,11 @@ button:hover {
 }
 
 .container {
-	width: 70%;
+	width: 85%;
 	margin: 0px auto;
 	box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
 	display: flex;
-	border-radius: 0 20px 20px 0;
+	/* border-radius: 0 20px 20px 0; */
 }
 
 .container-time {
@@ -736,7 +736,7 @@ button:hover {
   flex-wrap: wrap;
 	padding: 50px;
   padding-top: 75px;
-	border-radius: 20px 0 0 20px;
+	/* border-radius: 20px 0 0 20px; */
 	text-align: center;
 }
 
@@ -781,8 +781,8 @@ button:hover {
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	border: #38313181 .5px solid;
-	border-radius: 0 20px 20px 0;
-	width: 80%;
+	/* border-radius: 0 20px 20px 0; */
+	width: 75%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -889,7 +889,6 @@ select{
 
 	.container-form {
 		padding: 10px;
-		border-radius: 12px;
 	}
 	.form-field{
 		height: unset;
@@ -908,12 +907,12 @@ select{
 	}
 	.container-form h2{
 		all: unset;
-		font-size: 30px;
+		font-size: 26px;
 		font-weight: 600;
 		background-color: #476965;
 		color: #fff;
 		border-radius: 20px;
-		padding: 2%;
+		padding: 1%;
 		display: flex;
 		justify-content: center;
 	}

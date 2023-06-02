@@ -1103,7 +1103,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 	background-color: var(--card-clr);
 	box-shadow: 2px 2px 20px rgba(0,0,0,0.12);
 	padding: 20px;
-	border-radius: 20px;
+	border-radius: 5px;
 }
 .test-card-body .quote{
 	display: flex;

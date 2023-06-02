@@ -87,3 +87,31 @@ $('.testimonials-container').owlCarousel({
   }
 })
 
+// Sumit button 
+document.getElementById("submitBtn").addEventListener("click", function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Check if all required fields are filled
+  var nameInput = document.getElementsByName("Name")[0].value;
+  var phoneInput = document.getElementsByName("Phone no")[0].value;
+  var emailInput = document.getElementsByName("email")[0].value;
+  var dateInput = document.getElementsByName("date")[0].value;
+  var timeInput = document.getElementsByName("time")[0].value;
+
+  if (nameInput && phoneInput && emailInput && dateInput && timeInput) {
+    Swal.fire({
+      icon: "success",
+      title: "Success",
+      text: "Form submitted successfully!",
+    }).then(function() {
+      // Submit the form after the user dismisses the pop-up
+      document.querySelector("form").submit();
+    });
+  } else {
+    Swal.fire({
+      icon: "error",
+      title: "Error",
+      text: "Please fill in all required fields.",
+    });
+  }
+});

@@ -1112,8 +1112,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 .test-card-body .quote i{
 	font-size: 45px;
 	color: var(--heading-clr);
-  
-	margin-right: 20px;
+	margin-right: 10px;
 }
 .test-card-body .quote h2{
 	color: var(--heading-clr);
@@ -1200,6 +1199,12 @@ background-color: transparent;
 	background-color: var(--primary-clr) !important;
 }
 @media only screen and (max-width: 768px) {
+  .testimonials-section{
+    padding: 0px 5%;
+  }
+  .testimonials-container .testimonial-card{
+    padding: 0;
+  }
   .section-header h1{
     font-size: 25px;
 

@@ -576,6 +576,7 @@ all: unset;
 }
 
 .card.coming-soon::before {
+  z-index: 10;
   content: "Coming Soon";
   position: absolute;
   top: 10px;

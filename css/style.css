@@ -666,7 +666,7 @@ h1 > a:hover{
   justify-content: flex-end;
   margin: 10px 10px;
 }
-.des >p .fas{
+.des > p .fas{
   padding: 2px;
   margin-right: 10px;
 }
@@ -1118,7 +1118,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 .test-card-body .quote h2{
 	color: var(--heading-clr);
 }
-.test-card-body p{
+.test-card-body > p{
 	margin: 10px 0px 15px;
 	font-size: 14px;
 	line-height: 1.5;
@@ -1203,6 +1203,13 @@ background-color: transparent;
   .section-header h1{
     font-size: 25px;
 
+  }
+  .test-card-body > p{
+    all: unset;
+    margin: 10px 0px 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-clr);
   }
   .profile-desc span:nth-child(1){
     font-size: 18px;
